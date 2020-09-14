@@ -179,7 +179,7 @@ typename ordered_set<Key, CmpFn>::const_iterator& ordered_set<Key, CmpFn>::const
 template<typename Key, typename CmpFn> inline
 typename ordered_set<Key, CmpFn>::const_iterator ordered_set<Key, CmpFn>::const_iterator::operator++(int)
 {
-    ConstIterator tmp{*this};
+    const_iterator tmp{*this};
     operator++();
     return tmp;
 }
@@ -194,7 +194,7 @@ typename ordered_set<Key, CmpFn>::const_iterator& ordered_set<Key, CmpFn>::const
 template<typename Key, typename CmpFn> inline
 typename ordered_set<Key, CmpFn>::const_iterator ordered_set<Key, CmpFn>::const_iterator::operator--(int)
 {
-    ConstIterator tmp{*this};
+    const_iterator tmp{*this};
     operator--();
     return tmp;
 }
